@@ -13,13 +13,13 @@ class MainActivity : AppCompatActivity() {
         initListeners()
     }
 
-    fun initListeners() {
+    private fun initListeners() {
         btn_timer.setOnClickListener {
             createTimerIntent()
         }
     }
 
-    fun createTimerIntent() {
+    private fun createTimerIntent() {
         val timerIntent: Intent = Intent(baseContext, TimerActivity::class.java)
         startActivity(timerIntent)
     }

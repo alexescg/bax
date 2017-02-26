@@ -17,4 +17,9 @@
     <string name="fight">Fight</string>
     <string name="rest">Rest</string>
     <string name="initialtime">0 : 00</string>
+    <string name="round">Round</string>
+    <string name="initialRound">-</string>
+    <string name="left">Left</string>
+    <string name="stop">Stop</string>
+    <string name="hashtag">#</string>
 </resources>
