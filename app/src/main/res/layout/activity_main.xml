@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:grid="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -29,7 +28,7 @@
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
                 android:paddingTop="8dp"
-                android:text="Train"
+                android:text="@string/train"
                 android:theme="@style/AppTheme.Button" />
         </TableRow>
 
@@ -44,13 +43,14 @@
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
                 android:paddingTop="8dp"
-                android:text="Routines"
+                android:text="@string/routines"
                 android:theme="@style/AppTheme.Button" />
         </TableRow>
 
         <TableRow>
 
             <Button
+                android:id="@+id/btn_timer"
                 android:layout_width="0dp"
                 android:layout_height="75dp"
                 android:layout_weight="1"
@@ -59,7 +59,7 @@
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
                 android:paddingTop="8dp"
-                android:text="Timer"
+                android:text="@string/timer"
                 android:theme="@style/AppTheme.Button" />
         </TableRow>
 
@@ -74,7 +74,7 @@
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
                 android:paddingTop="8dp"
-                android:text="Info"
+                android:text="@string/info"
                 android:theme="@style/AppTheme.Button" />
 
         </TableRow>

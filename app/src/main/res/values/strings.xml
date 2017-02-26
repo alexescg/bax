@@ -1,4 +1,20 @@
 <resources>
     <string name="app_name">Bax</string>
     <string name="image_header">Image header</string>
+    <string name="info">Info</string>
+    <string name="timer">Timer</string>
+    <string name="routines">Routines</string>
+    <string name="train">Train</string>
+    <string name="start">Start</string>
+    <string name="rounds">Rounds</string>
+    <string name="round_time">Round Time</string>
+    <string name="time">Time</string>
+    <string name="twomin">2 min</string>
+    <string name="threemin">3 min</string>
+    <string name="length">Length</string>
+    <string name="zeromin">0 min</string>
+    <string name="zerosec">0 s</string>
+    <string name="fight">Fight</string>
+    <string name="rest">Rest</string>
+    <string name="initialtime">0 : 00</string>
 </resources>
