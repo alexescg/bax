@@ -22,4 +22,7 @@
     <string name="left">Left</string>
     <string name="stop">Stop</string>
     <string name="hashtag">#</string>
+    <string name="title_attack_list">Attacks</string>
+    <string name="title_attack_detail">Attack Detail</string>
+    <string name="image_placeholder">Image placeholder</string>
 </resources>

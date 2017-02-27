@@ -66,6 +66,7 @@
         <TableRow>
 
             <Button
+                android:id="@+id/btn_info"
                 android:layout_width="0dp"
                 android:layout_height="75dp"
                 android:layout_weight="1"
