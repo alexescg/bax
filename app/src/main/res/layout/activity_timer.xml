@@ -4,7 +4,7 @@
     android:id="@+id/activity_timer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.app.alex.bax.TimerActivity">
+    tools:context="com.app.alex.bax.views.timer.TimerActivity">
 
     <include layout="@layout/image_header" />
 
@@ -18,31 +18,31 @@
 
         <TableRow>
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="65dp"
-                android:layout_weight="4"
-                android:gravity="center"
-                android:paddingBottom="5dp"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
-                android:paddingTop="8dp"
-                android:text="@string/hashtag"
-                android:textAlignment="center"
-                android:textAppearance="@android:style/TextAppearance.Large" />
-            <TextView
-                android:id="@+id/text_currentRound"
-                android:layout_width="0dp"
-                android:layout_height="65dp"
-                android:layout_weight="4"
-                android:gravity="center"
-                android:paddingBottom="5dp"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
-                android:paddingTop="8dp"
-                android:text="@string/initialRound"
-                android:textAlignment="center"
-                android:textAppearance="@android:style/TextAppearance.Large" />
+            <!--<TextView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="65dp"-->
+                <!--android:layout_weight="4"-->
+                <!--android:gravity="center"-->
+                <!--android:paddingBottom="5dp"-->
+                <!--android:paddingLeft="16dp"-->
+                <!--android:paddingRight="16dp"-->
+                <!--android:paddingTop="8dp"-->
+                <!--android:text="@string/hashtag"-->
+                <!--android:textAlignment="center"-->
+                <!--android:textAppearance="@android:style/TextAppearance.Large" />-->
+            <!--<TextView-->
+                <!--android:id="@+id/text_currentRound"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="65dp"-->
+                <!--android:layout_weight="4"-->
+                <!--android:gravity="center"-->
+                <!--android:paddingBottom="5dp"-->
+                <!--android:paddingLeft="16dp"-->
+                <!--android:paddingRight="16dp"-->
+                <!--android:paddingTop="8dp"-->
+                <!--android:text="@string/initialRound"-->
+                <!--android:textAlignment="center"-->
+                <!--android:textAppearance="@android:style/TextAppearance.Large" />-->
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="65dp"
@@ -71,34 +71,34 @@
 
         </TableRow>
 
-        <TableRow>
+        <!--<TableRow>-->
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="65dp"
-                android:layout_weight="1"
-                android:paddingBottom="5dp"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
-                android:paddingTop="8dp"
-                android:text="@string/rounds"
-                android:textAppearance="@android:style/TextAppearance.Medium"
-                android:textSize="15sp" />
+            <!--<TextView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="65dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:paddingBottom="5dp"-->
+                <!--android:paddingLeft="16dp"-->
+                <!--android:paddingRight="16dp"-->
+                <!--android:paddingTop="8dp"-->
+                <!--android:text="@string/rounds"-->
+                <!--android:textAppearance="@android:style/TextAppearance.Medium"-->
+                <!--android:textSize="15sp" />-->
 
-            <EditText
-                android:id="@+id/text_rounds"
-                android:layout_width="0dp"
-                android:layout_height="65dp"
-                android:layout_marginBottom="2dip"
-                android:layout_weight="3"
-                android:inputType="number"
-                android:paddingBottom="5dp"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
-                android:paddingTop="8dp"
-                android:textAlignment="center"
-                android:theme="@style/AppTheme.Button" />
-        </TableRow>
+            <!--<EditText-->
+                <!--android:id="@+id/text_rounds"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="65dp"-->
+                <!--android:layout_marginBottom="2dip"-->
+                <!--android:layout_weight="3"-->
+                <!--android:inputType="number"-->
+                <!--android:paddingBottom="5dp"-->
+                <!--android:paddingLeft="16dp"-->
+                <!--android:paddingRight="16dp"-->
+                <!--android:paddingTop="8dp"-->
+                <!--android:textAlignment="center"-->
+                <!--android:theme="@style/AppTheme.Button" />-->
+        <!--</TableRow>-->
 
         <TableRow>
 
@@ -143,48 +143,48 @@
                 android:textAppearance="@android:style/TextAppearance.Medium" />
         </TableRow>
 
-        <TableRow>
+        <!--<TableRow>-->
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="65dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:paddingBottom="5dp"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
-                android:paddingTop="8dp"
-                android:text="@string/rest"
-                android:textAppearance="@android:style/TextAppearance.Medium" />
+            <!--<TextView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="65dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:gravity="center"-->
+                <!--android:paddingBottom="5dp"-->
+                <!--android:paddingLeft="16dp"-->
+                <!--android:paddingRight="16dp"-->
+                <!--android:paddingTop="8dp"-->
+                <!--android:text="@string/rest"-->
+                <!--android:textAppearance="@android:style/TextAppearance.Medium" />-->
 
-            <SeekBar
-                android:id="@+id/seek_restTime"
-                android:layout_width="0dp"
-                android:layout_height="65dp"
-                android:layout_marginBottom="2dip"
-                android:layout_weight="2"
-                android:gravity="center"
-                android:inputType="number"
-                android:max="60"
-                android:paddingBottom="5dp"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
-                android:paddingTop="8dp"
-                android:theme="@style/AppTheme.Button" />
+            <!--<SeekBar-->
+                <!--android:id="@+id/seek_restTime"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="65dp"-->
+                <!--android:layout_marginBottom="2dip"-->
+                <!--android:layout_weight="2"-->
+                <!--android:gravity="center"-->
+                <!--android:inputType="number"-->
+                <!--android:max="60"-->
+                <!--android:paddingBottom="5dp"-->
+                <!--android:paddingLeft="16dp"-->
+                <!--android:paddingRight="16dp"-->
+                <!--android:paddingTop="8dp"-->
+                <!--android:theme="@style/AppTheme.Button" />-->
 
-            <TextView
-                android:id="@+id/text_restTime"
-                android:layout_width="0dp"
-                android:layout_height="65dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:paddingBottom="5dp"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
-                android:paddingTop="8dp"
-                android:text="@string/zerosec"
-                android:textAppearance="@android:style/TextAppearance.Medium" />
-        </TableRow>
+            <!--<TextView-->
+                <!--android:id="@+id/text_restTime"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="65dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:gravity="center"-->
+                <!--android:paddingBottom="5dp"-->
+                <!--android:paddingLeft="16dp"-->
+                <!--android:paddingRight="16dp"-->
+                <!--android:paddingTop="8dp"-->
+                <!--android:text="@string/zerosec"-->
+                <!--android:textAppearance="@android:style/TextAppearance.Medium" />-->
+        <!--</TableRow>-->
 
         <TableRow>
 
@@ -192,7 +192,7 @@
                 android:id="@+id/btn_start"
                 android:layout_width="0dp"
                 android:layout_height="65dp"
-                android:layout_weight="2"
+                android:layout_weight="4"
                 android:drawableLeft="@drawable/ic_box_glove"
                 android:drawableStart="@drawable/ic_box_glove"
                 android:paddingBottom="5dp"
@@ -200,20 +200,6 @@
                 android:paddingRight="16dp"
                 android:paddingTop="8dp"
                 android:text="@string/start"
-                android:theme="@style/AppTheme.Button" />
-
-            <Button
-                android:id="@+id/btn_stop"
-                android:layout_width="0dp"
-                android:layout_height="65dp"
-                android:layout_weight="2"
-                android:drawableLeft="@drawable/ic_cancel"
-                android:drawableStart="@drawable/ic_cancel"
-                android:paddingBottom="5dp"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
-                android:paddingTop="8dp"
-                android:text="@string/stop"
                 android:theme="@style/AppTheme.Button" />
 
         </TableRow>

@@ -3,6 +3,7 @@ package com.app.alex.bax
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.app.alex.bax.views.timer.TimerActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
