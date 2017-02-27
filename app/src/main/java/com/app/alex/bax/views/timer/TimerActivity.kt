@@ -7,7 +7,6 @@ import android.util.Log
 import android.widget.SeekBar
 import com.app.alex.bax.R
 import kotlinx.android.synthetic.main.activity_timer.*
-import com.app.alex.bax.R.string.timer
 
 
 class TimerActivity : AppCompatActivity() {
@@ -66,35 +65,11 @@ class TimerActivity : AppCompatActivity() {
     }
 
     private fun initRestTimeSeekBar() {
-        seek_restTime.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
-            override fun onProgressChanged(seekBar: SeekBar, progress: Int, fromUser: Boolean) {
-                text_restTime.text = "$progress s"
-            }
-
-            override fun onStartTrackingTouch(seekBar: SeekBar?) {
-                // Just an empty method
-            }
-
-            override fun onStopTrackingTouch(seekBar: SeekBar) {
-                // Another empty method
-            }
-        })
+        seek_restTime.setOnSeekBarChangeListener(RestTimeSeekBarListener(text_restTime))
     }
 
     private fun initRoundTimeSeekBar() {
-        seek_roundTime.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
-            override fun onProgressChanged(seekBar: SeekBar, progress: Int, fromUser: Boolean) {
-                text_roundTime.text = "$progress min"
-            }
-
-            override fun onStartTrackingTouch(seekBar: SeekBar?) {
-                // Just an empty method
-            }
-
-            override fun onStopTrackingTouch(seekBar: SeekBar) {
-                // Another empty method
-            }
-        })
+        seek_roundTime.setOnSeekBarChangeListener(RoundTimeSeekBarListener(text_roundTime))
     }
 
 
