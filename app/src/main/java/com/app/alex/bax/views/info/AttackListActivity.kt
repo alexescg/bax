@@ -1,13 +1,9 @@
 package com.app.alex.bax.views.info
 
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.RecyclerView
-import android.support.v7.widget.Toolbar
-import android.support.design.widget.FloatingActionButton
-import android.support.design.widget.Snackbar
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -55,10 +51,10 @@ class AttackListActivity : AppCompatActivity() {
     }
 
     private fun setupRecyclerView(recyclerView: RecyclerView) {
-        recyclerView.adapter = SimpleItemRecyclerViewAdapter(BoxingHits.items)
+        recyclerView.adapter = SimpleItemRecyclerViewAdapter(BoxingHits.hitList)
     }
 
-    inner class SimpleItemRecyclerViewAdapter(private val mValues: List<BoxingHits.BoxingHit>) : RecyclerView.Adapter<SimpleItemRecyclerViewAdapter.ViewHolder>() {
+    inner class SimpleItemRecyclerViewAdapter(private val mValues: List<BoxingHit>) : RecyclerView.Adapter<SimpleItemRecyclerViewAdapter.ViewHolder>() {
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
             val view = LayoutInflater.from(parent.context)
@@ -97,7 +93,7 @@ class AttackListActivity : AppCompatActivity() {
         inner class ViewHolder(val mView: View) : RecyclerView.ViewHolder(mView) {
             val mIdView: TextView = mView.findViewById(R.id.id) as TextView
             val mContentView: TextView = mView.findViewById(R.id.content) as TextView
-            var mItem: BoxingHits.BoxingHit? = null
+            var mItem: BoxingHit? = null
 
             override fun toString(): String {
                 return super.toString() + " '" + mContentView.text + "'"

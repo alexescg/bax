@@ -7,10 +7,11 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 
 import com.app.alex.bax.R
-import com.app.alex.bax.views.info.BoxingHits.item_map
+import com.app.alex.bax.views.info.BoxingHits.hitMap
 
 /**
  * A fragment representing a single Attack detail screen.
@@ -27,16 +28,13 @@ class AttackDetailFragment : Fragment() {
     /**
      * The dummy content this fragment is presenting.
      */
-    private var mItem: BoxingHits.BoxingHit? = null
+    private var mItem: BoxingHit? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         if (arguments.containsKey(ARG_ITEM_ID)) {
-            // Load the dummy content specified by the fragment
-            // arguments. In a real-world scenario, use a Loader
-            // to load content from a content provider.
-            mItem = item_map[arguments.getString(ARG_ITEM_ID)]
+            mItem = hitMap[arguments.getString(ARG_ITEM_ID)]
 
             val activity = this.activity
             val appBarLayout = activity.findViewById(R.id.toolbar_layout) as CollapsingToolbarLayout
@@ -51,6 +49,9 @@ class AttackDetailFragment : Fragment() {
         // Show the dummy content as text in a TextView.
         if (mItem != null) {
             (rootView.findViewById(R.id.attack_detail) as TextView).text = mItem!!.details
+            val image: ImageView = rootView.findViewById(R.id.image) as ImageView
+            image.setImageResource(mItem!!.imageId)
+
         }
 
         return rootView
