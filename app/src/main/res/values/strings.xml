@@ -3,7 +3,7 @@
     <string name="image_header">Image header</string>
     <string name="info">Info</string>
     <string name="timer">Timer</string>
-    <string name="routines">Routines</string>
+    <string name="exercises">Exercises</string>
     <string name="train">Train</string>
     <string name="start">Start</string>
     <string name="rounds">Rounds</string>
@@ -25,4 +25,9 @@
     <string name="title_attack_list">Attacks</string>
     <string name="title_attack_detail">Attack Detail</string>
     <string name="image_placeholder">Image placeholder</string>
+    <string name="title_activity_exercise">Exercise</string>
+    <string name="name">Name</string>
+    <string name="description">Description</string>
+    <string name="about">About</string>
+    <string name="create">Create</string>
 </resources>

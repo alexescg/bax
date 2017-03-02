@@ -11,6 +11,7 @@ import android.widget.TextView
 import kotlinx.android.synthetic.main.attack_list.*
 
 import com.app.alex.bax.R
+import com.app.alex.bax.model.BoxingHit
 
 import kotlinx.android.synthetic.main.activity_attack_list.*
 

@@ -1,6 +1,7 @@
 package com.app.alex.bax.views.info
 
 import com.app.alex.bax.R
+import com.app.alex.bax.model.BoxingHit
 
 /**
  *

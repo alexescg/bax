@@ -1,8 +1,10 @@
-package com.app.alex.bax
+package com.app.alex.bax.views
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.app.alex.bax.R
+import com.app.alex.bax.views.exercise.ExerciseActivity
 import com.app.alex.bax.views.info.AttackListActivity
 import com.app.alex.bax.views.timer.TimerActivity
 import kotlinx.android.synthetic.main.activity_main.*
@@ -22,6 +24,9 @@ class MainActivity : AppCompatActivity() {
         btn_info.setOnClickListener {
             createInfoIntent()
         }
+        btn_exercises.setOnClickListener {
+            createExerciseIntent()
+        }
     }
 
     private fun createTimerIntent() {
@@ -34,5 +39,8 @@ class MainActivity : AppCompatActivity() {
         startActivity(attackListIntent)
     }
 
-
+    private fun createExerciseIntent() {
+        val exerciseIntent: Intent = Intent(baseContext, ExerciseActivity::class.java)
+        startActivity(exerciseIntent)
+    }
 }
