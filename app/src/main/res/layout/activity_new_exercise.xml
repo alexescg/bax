@@ -36,7 +36,7 @@
                 android:layout_height="65dp"
                 android:layout_marginBottom="2dip"
                 android:layout_weight="3"
-                android:inputType="number"
+                android:inputType="text"
                 android:paddingBottom="5dp"
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
