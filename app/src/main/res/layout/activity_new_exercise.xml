@@ -60,7 +60,7 @@
                 android:textSize="15sp" />
 
             <EditText
-                android:id="@+id/text_description"
+                android:id="@+id/text_about"
                 android:layout_width="0dp"
                 android:layout_height="65dp"
                 android:layout_marginBottom="2dip"

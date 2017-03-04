@@ -1,6 +1,7 @@
 package com.app.alex.bax.views.exercise
 
 import com.app.alex.bax.model.Exercise
+import org.jetbrains.annotations.Mutable
 
 /**
  *
@@ -12,7 +13,7 @@ object Exercises {
     /**
      * An array of boxing hits.
      */
-    val exerciseList: List<Exercise>
+    val exerciseList: MutableSet<Exercise>
 
     /**
      * A map of boxing hits, by ID.
@@ -25,7 +26,7 @@ object Exercises {
         val shadowBox: Exercise = Exercise("Shadow Box", "Box against your shadow")
         val jumpRope: Exercise = Exercise("Jumping Rope", "Jump a Rope constantly")
         val heavyBag: Exercise = Exercise("HeavyBag", "Hit a Heavy Bag")
-        exerciseList = listOf(
+        exerciseList = mutableSetOf(
                 shadowBox,
                 jumpRope,
                 heavyBag
