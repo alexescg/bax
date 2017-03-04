@@ -10,6 +10,7 @@ import android.view.View
 
 import com.app.alex.bax.R
 import kotlinx.android.synthetic.main.activity_new_exercise.*
+import kotlinx.android.synthetic.main.attack_list_content.view.*
 
 class ExerciseActivity : AppCompatActivity() {
 

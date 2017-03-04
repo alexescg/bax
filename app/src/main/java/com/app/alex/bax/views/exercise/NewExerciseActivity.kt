@@ -31,8 +31,6 @@ class NewExerciseActivity : AppCompatActivity() {
         } else {
             Toast.makeText(baseContext, "A field is empty", Toast.LENGTH_SHORT).show()
         }
-
-
     }
 
 

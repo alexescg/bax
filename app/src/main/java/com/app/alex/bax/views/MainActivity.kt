@@ -3,6 +3,7 @@ package com.app.alex.bax.views
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.app.alex.bax.R
 import com.app.alex.bax.views.exercise.ExerciseActivity
 import com.app.alex.bax.views.info.AttackListActivity
@@ -18,6 +19,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initListeners() {
+        btn_train.setOnClickListener {
+            createTrainIntent()
+        }
         btn_timer.setOnClickListener {
             createTimerIntent()
         }
@@ -27,6 +31,10 @@ class MainActivity : AppCompatActivity() {
         btn_exercises.setOnClickListener {
             createExerciseIntent()
         }
+    }
+
+    private fun createTrainIntent() {
+        Toast.makeText(baseContext, "Not yet implemented! :(", Toast.LENGTH_SHORT).show()
     }
 
     private fun createTimerIntent() {

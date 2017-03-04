@@ -19,6 +19,7 @@
         <TableRow>
 
             <Button
+                android:id="@+id/btn_train"
                 android:layout_width="0dp"
                 android:layout_height="75dp"
                 android:layout_marginBottom="2dip"
