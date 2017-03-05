@@ -21,7 +21,7 @@ class NewExerciseActivity : AppCompatActivity() {
 
     private fun launchSuccessCreateExerciseActivity() {
         val exerciseName: Editable = text_name.text
-        val exerciseAbout: Editable = text_name.text
+        val exerciseAbout: Editable = text_about.text
         if (exerciseName.isNotEmpty() && exerciseAbout.isNotEmpty()) {
             val newExercise: Exercise = Exercise(exerciseName.toString(), exerciseAbout.toString())
             Exercises.exerciseList.add(newExercise)

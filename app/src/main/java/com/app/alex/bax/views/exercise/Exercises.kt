@@ -31,10 +31,6 @@ object Exercises {
                 jumpRope,
                 heavyBag
         )
-//        hitMap = mapOf("1" to jab,
-//                "2" to upper,
-//                "3" to hook,
-//                "4" to cross)
         count = exerciseList.size
     }
 }
