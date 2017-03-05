@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".views.MainActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -27,7 +27,7 @@
         <activity
             android:name=".views.info.AttackListActivity"
             android:label="@string/title_attack_list"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".views.info.AttackDetailActivity"
             android:label="@string/title_attack_detail"
@@ -37,6 +37,12 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.app.alex.bax.views.info.AttackListActivity" />
         </activity>
+        <activity
+            android:name=".views.exercise.ExerciseActivity"
+            android:label="@string/title_activity_exercise"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".views.exercise.NewExerciseActivity" />
+        <activity android:name=".views.exercise.NewExerciseSuccessActivity"></activity>
     </application>
 
 </manifest>

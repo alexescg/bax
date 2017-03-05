@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
+    android:id="@+id/activity_new_exercise"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.app.alex.bax.views.MainActivity">
+    tools:context="com.app.alex.bax.views.exercise.NewExerciseActivity">
 
     <include layout="@layout/image_header" />
 
@@ -14,74 +14,82 @@
         android:layout_marginTop="170dp"
         android:gravity="bottom|start"
         android:orientation="vertical"
-        android:weightSum="1">
+        android:weightSum="4">
 
         <TableRow>
 
-            <Button
-                android:id="@+id/btn_train"
+            <TextView
                 android:layout_width="0dp"
-                android:layout_height="75dp"
+                android:layout_height="65dp"
+                android:layout_weight="1"
+                android:paddingBottom="5dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:text="@string/name"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/text_name"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
                 android:layout_marginBottom="2dip"
+                android:layout_weight="3"
+                android:inputType="text"
+                android:paddingBottom="5dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:textAlignment="center"
+                android:theme="@style/AppTheme.Button" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="65dp"
                 android:layout_weight="1"
+                android:paddingBottom="5dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:text="@string/about"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/text_about"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_marginBottom="2dip"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:inputType="textMultiLine"
+                android:paddingBottom="5dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:textAlignment="center"
+                android:theme="@style/AppTheme.Button" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn_create"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_weight="4"
                 android:drawableLeft="@drawable/ic_box_glove"
+                android:drawableStart="@drawable/ic_box_glove"
                 android:paddingBottom="5dp"
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
                 android:paddingTop="8dp"
-                android:text="@string/train"
+                android:text="@string/create"
                 android:theme="@style/AppTheme.Button" />
         </TableRow>
-
-        <TableRow>
-
-            <Button
-                android:id="@+id/btn_exercises"
-                android:layout_width="0dp"
-                android:layout_height="75dp"
-                android:layout_weight="1"
-                android:drawableLeft="@drawable/ic_man"
-                android:paddingBottom="5dp"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
-                android:paddingTop="8dp"
-                android:text="@string/exercises"
-                android:theme="@style/AppTheme.Button" />
-        </TableRow>
-
-        <TableRow>
-
-            <Button
-                android:id="@+id/btn_timer"
-                android:layout_width="0dp"
-                android:layout_height="75dp"
-                android:layout_weight="1"
-                android:drawableLeft="@drawable/ic_timer"
-                android:paddingBottom="5dp"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
-                android:paddingTop="8dp"
-                android:text="@string/timer"
-                android:theme="@style/AppTheme.Button" />
-        </TableRow>
-
-        <TableRow>
-
-            <Button
-                android:id="@+id/btn_info"
-                android:layout_width="0dp"
-                android:layout_height="75dp"
-                android:layout_weight="1"
-                android:drawableLeft="@drawable/ic_info"
-                android:paddingBottom="5dp"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
-                android:paddingTop="8dp"
-                android:text="@string/info"
-                android:theme="@style/AppTheme.Button" />
-
-        </TableRow>
-
     </TableLayout>
-
 </RelativeLayout>

@@ -1,4 +1,4 @@
-package com.app.alex.bax.views.info
+package com.app.alex.bax.model
 
 /**
  *

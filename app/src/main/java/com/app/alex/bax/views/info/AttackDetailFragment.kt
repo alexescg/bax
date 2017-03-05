@@ -11,6 +11,7 @@ import android.widget.ImageView
 import android.widget.TextView
 
 import com.app.alex.bax.R
+import com.app.alex.bax.model.BoxingHit
 import com.app.alex.bax.views.info.BoxingHits.hitMap
 
 /**
