@@ -7,10 +7,10 @@ import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
 import android.view.View
+import android.widget.BaseAdapter
 
 import com.app.alex.bax.R
-import kotlinx.android.synthetic.main.activity_new_exercise.*
-import kotlinx.android.synthetic.main.attack_list_content.view.*
+import kotlinx.android.synthetic.main.content_exercise.*
 
 class ExerciseActivity : AppCompatActivity() {
 
@@ -24,11 +24,11 @@ class ExerciseActivity : AppCompatActivity() {
         fab.setOnClickListener {
             createExerciseIntent()
         }
+        list_exercises.adapter = ExerciseListAdapter(Exercises.exerciseList, baseContext)
     }
 
     private fun createExerciseIntent() {
         val newExerciseIntent: Intent = Intent(baseContext, NewExerciseActivity::class.java)
         startActivity(newExerciseIntent)
     }
-
 }
