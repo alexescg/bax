@@ -39,4 +39,8 @@ class RestClient {
     fun getExercises(): Call<ListResponse<Exercise>> {
         return exerciseService.getExercises()
     }
+
+    fun createExercise(exercise: Exercise): Call<Exercise> {
+        return exerciseService.createExercise(exercise)
+    }
 }

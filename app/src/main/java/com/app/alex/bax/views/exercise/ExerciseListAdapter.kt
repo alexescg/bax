@@ -55,5 +55,4 @@ class ExerciseListAdapter(var exercises: List<Exercise>, var context: Context) :
     override fun getCount(): Int {
         return exercises.size
     }
-
 }

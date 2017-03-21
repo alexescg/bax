@@ -6,6 +6,7 @@ import android.support.design.widget.FloatingActionButton
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
 import android.util.Log
+import android.widget.AdapterView
 import com.app.alex.bax.R
 import com.app.alex.bax.api.ListResponse
 import com.app.alex.bax.api.RestClient
@@ -19,6 +20,7 @@ class ExerciseActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_exercise)
         val toolbar = findViewById(R.id.toolbar) as Toolbar
         setSupportActionBar(toolbar)
 
@@ -26,6 +28,21 @@ class ExerciseActivity : AppCompatActivity() {
         fab.setOnClickListener {
             createExerciseIntent()
         }
+        populateList()
+        list_exercises.isLongClickable = true
+        list_exercises.setOnItemLongClickListener {
+            parent, view, position, id ->
+            TODO("implement delete")
+            // true
+        }
+    }
+
+    private fun createExerciseIntent() {
+        val newExerciseIntent: Intent = Intent(baseContext, NewExerciseActivity::class.java)
+        startActivity(newExerciseIntent)
+    }
+
+    private fun populateList() {
         val client: RestClient = RestClient()
         val call: Call<ListResponse<Exercise>> = client.getExercises()
         call.enqueue(object : Callback<ListResponse<Exercise>> {
@@ -42,13 +59,6 @@ class ExerciseActivity : AppCompatActivity() {
             }
 
         })
-        setContentView(R.layout.activity_exercise)
-
-    }
-
-    private fun createExerciseIntent() {
-        val newExerciseIntent: Intent = Intent(baseContext, NewExerciseActivity::class.java)
-        startActivity(newExerciseIntent)
     }
 
 }

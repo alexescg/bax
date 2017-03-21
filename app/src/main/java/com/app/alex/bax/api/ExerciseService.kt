@@ -2,10 +2,7 @@ package com.app.alex.bax.api
 
 import com.app.alex.bax.model.Exercise
 import retrofit2.Call
-import retrofit2.http.DELETE
-import retrofit2.http.GET
-import retrofit2.http.POST
-import retrofit2.http.Path
+import retrofit2.http.*
 
 /**
  * Service that connects to api to handle exercises.
@@ -21,8 +18,8 @@ interface ExerciseService {
     fun getExerciseById(@Path("id") id: Int): Call<Exercise>
 
     @POST("/exercises")
-    fun createExercise()
+    fun createExercise(@Body exercise : Exercise) : Call<Exercise>
 
     @DELETE("/exercises/{id}")
-    fun deleteExerciseById(@Path("id") id: Int)
+    fun deleteExerciseById(@Path("id") id: Int) : Call<Exercise>
 }

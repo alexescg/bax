@@ -22,8 +22,8 @@ class NewExerciseSuccessActivity : AppCompatActivity() {
     }
 
     private fun showSuccessMessage() {
-        val exercise: Exercise = intent.getSerializableExtra("exercise") as Exercise
-        success_text.text = "Exercise: ${exercise.name} has been added to your exercises list."
+//        val exercise: Exercise = intent.getSerializableExtra("exercise") as Exercise
+//        success_text.text = "Exercise: ${exercise.name} has been added to your exercises list."
     }
 
     private fun backToMenu(){
