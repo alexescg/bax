@@ -16,7 +16,7 @@ import com.app.alex.bax.views.TwoLineItemViewHolder
  * @author alex
  * @since 3/4/17.
  */
-class ExerciseListAdapter(var exercises: MutableSet<Exercise>, var context: Context) : BaseAdapter() {
+class ExerciseListAdapter(var exercises: List<Exercise>, var context: Context) : BaseAdapter() {
 
     var layoutInflater: LayoutInflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
 
@@ -38,7 +38,7 @@ class ExerciseListAdapter(var exercises: MutableSet<Exercise>, var context: Cont
             viewHolder = convertView.tag as TwoLineItemViewHolder
         }
 
-        val exercise: Exercise = Exercises.exerciseList.elementAt(position)
+        val exercise: Exercise = exercises.elementAt(position)
         viewHolder.title.text = exercise.name
         viewHolder.content.text = exercise.description
         return tempView!!

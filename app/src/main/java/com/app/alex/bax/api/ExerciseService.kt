@@ -15,7 +15,7 @@ import retrofit2.http.Path
  */
 interface ExerciseService {
     @GET("/exercises")
-    fun getExercises(): Call<List<Exercise>>
+    fun getExercises(): Call<ListResponse<Exercise>>
 
     @GET("/exercises/{id}")
     fun getExerciseById(@Path("id") id: Int): Call<Exercise>

@@ -23,11 +23,11 @@ class NewExerciseActivity : AppCompatActivity() {
         val exerciseName: Editable = text_name.text
         val exerciseAbout: Editable = text_about.text
         if (exerciseName.isNotEmpty() && exerciseAbout.isNotEmpty()) {
-            val newExercise: Exercise = Exercise(exerciseName.toString(), exerciseAbout.toString())
-            Exercises.exerciseList.add(newExercise)
+//            val newExercise: Exercise = Exercise(1, exerciseName.toString(), exerciseAbout.toString())
+//            Exercises.exerciseList.add(newExercise)
             val newExerciseSuccessIntent: Intent = Intent(baseContext, NewExerciseSuccessActivity::class.java)
-            newExerciseSuccessIntent.putExtra("exercise", newExercise)
-            startActivity(newExerciseSuccessIntent)
+//            newExerciseSuccessIntent.putExtra("exercise", newExercise)
+//            startActivity(newExerciseSuccessIntent)
         } else {
             Toast.makeText(baseContext, "A field is empty", Toast.LENGTH_SHORT).show()
         }
