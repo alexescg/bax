@@ -23,9 +23,9 @@ object Exercises {
     private val count: Int
 
     init {
-        val shadowBox: Exercise = Exercise("Shadow Box", "Box against your shadow")
-        val jumpRope: Exercise = Exercise("Jumping Rope", "Jump a Rope constantly")
-        val heavyBag: Exercise = Exercise("HeavyBag", "Hit a Heavy Bag")
+        val shadowBox: Exercise = Exercise(1, "Shadow Box", "Box against your shadow")
+        val jumpRope: Exercise = Exercise(2, "Jumping Rope", "Jump a Rope constantly")
+        val heavyBag: Exercise = Exercise(3, "HeavyBag", "Hit a Heavy Bag")
         exerciseList = mutableSetOf(
                 shadowBox,
                 jumpRope,
